@@ -1,0 +1,7 @@
+.lyrics {
+border: 2px dashed #ff0202;
+padding: 12px;
+border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+}
