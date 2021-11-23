@@ -18,9 +18,11 @@ border-radius: 10px 10px 10px 10px;
 .pdf{ background-color: #ff0000; 
   border: none;
   color: white;
-  padding: 15px;
+  padding: 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
+  font-size: 14px;
   }
+.pdf:hover{ background-color: #000; 
+}
