@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        
+         />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.1/vanilla-tilt.min.js"
+        ></script>
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: #000000;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .container {
+            width: 30em;
+        }
+
+        .head__section img {
+            display: block;
+            margin: 0 auto;
+            height: 5rem;
+            width: 5rem;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .head__section h1 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .head__section>p {
+            text-align: center;
+            color: #fff;
+        }
+
+        .social__links ul li {
+            width: 100%;
+            margin: 1.2rem 0;
+            padding: 0.4rem 0.8rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(0px);
+            border-radius: 5px;
+            transition: background 0.25s;
+            transform-style: preserve-3d;
+            perspective: 500px;
+            box-shadow: 0 0 0.8rem rgba(255, 255, 255, .12);
+        }
+
+        .js-tilt-glare {
+            border-radius: 5px;
+        }
+
+        .social__links ul li a {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            color: #ffff;
+            font-size: 1rem;
+        }
+
+        .social__links ul li a i {
+            text-align: center;
+            line-height: 4rem;
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+            transform: scale(1.4) translateZ(50px);
+            transition: 0.25s;
+        }
+
+        .social__links ul li a span {
+            line-height: 1.4rem;
+        }
+
+        .social__links ul .instagram:hover {
+            background: #fd5949;
+        }
+
+        .social__links ul .youtube:hover {
+            background: #FF0000;
+        }
+
+        .social__links ul .telegram:hover {
+            background: #0088cc;
+        }
+
+        .social__links ul .github:hover {
+            background: #333;
+        }
+
+        .whatapp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            color: #82e947;
+            bottom: 10%;
+            left: 90%;
+            z-index: 1000;
+        }
+
+        .whatapp i {
+            color: #82e947;
+            font-size: 3rem;
+        }
+
+        .whatapp p {
+            color: #82e947;
+
+        }
+
+        @media only screen and (max-width: 549px) {
+            .container {
+                width: 88vw;
+            }
+            .whatapp {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            color: #82e947;
+            bottom: 3%;
+            left: 80%;
+            z-index: 1000;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head__section">
+            <!-- Created by Prathyoush -->
+            <h1>Appu Kunj</h1>
+            <!-- @prathyoush -->
+            <p>Testing</p>
+        </div>
+        <div class="social__links">
+            <ul id="item">
+                <li class="instagram"><a href="https://www.instagram.com/htmlcoding_/?utm_medium=copy_link">
+                        <i class="fab fa-instagram"></i>
+                        <span>
+                            <p>Follow me on Instagram</p>
+                        </span>
+                    </a></li>
+                <li class="youtube"><a href="https://www.youtube.com/channel/UChnKVDVn-t8L9w9lJ5Ebhgw">
+                        <i class="fab fa-youtube"></i>
+                        <span>
+
+                            <p>Video coming soon plz subscribe our channel</p>
+                        </span>
+                    </a></li>
+                <li class="telegram"><a href="https://telegram.me/joindevlopercommunity">
+                        <i class="fab fa-telegram"></i>
+                        <span>
+
+                            <p>Download free Notes on Telegram.</p>
+                        </span>
+                    </a></li>
+               
+            </ul>
+        </div>
+    </div>
+    <div class="whatapp">
+       <a href='https://wa.me/+919667959039' target='_blank'> <i class="fab fa-whatsapp-square"></i></a>
+    </div>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".social__links ul li"), {
+            max: 10,
+            speed: 800,
+            glare: true,
+            "max-glare": 1
+        });
+    </script>
+</body>
+
+</html>
