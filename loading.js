@@ -1,4 +1,4 @@
 $(document).ready(function(){
 
-$(".malluload div").fadeOut(500);
+$("#loading").fadeOut(500);
 });
