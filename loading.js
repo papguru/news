@@ -1,4 +1,4 @@
 $(document).ready(function(){
 
-$("#loading").fadeOut(500);
+$("#loading").hide();
 });
