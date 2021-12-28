@@ -1,1 +1,60 @@
-.malluload{display:inline-block;position:fixed;bottom:0;left:20px;width:76px;height:76px}.malluload div{display:inline-block;position:absolute;left:8px;width:16px;animation:malluload 1.2s cubic-bezier(0,.5,.5,1) infinite}.malluload div:nth-child(1){left:8px;animation-delay:-0.24s}.malluload div:nth-child(2){left:32px;animation-delay:-0.12s}.malluload div:nth-child(3){left:56px;animation-delay:0}@keyframes malluload{0%{top:8px;height:64px}50%,100%{top:24px;height:32px}}
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: scaleY(0.05) translateX(-10px);
+        opacity: 0.1;
+    }
+    50% {
+        -webkit-transform: scaleY(1.2) translateX(10px);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scaleY(0.05) translateX(-10px);
+        opacity: 0.1;
+    }
+}
+#loading {
+    position: fixed;
+    bottom: 0;
+    left: 20px;
+    width: 80px;
+    height: 75px;
+    z-index: 9999;
+}
+#loading > div {
+    float: left;
+    width: 6px;
+    height: 40px;
+    margin: 10px 1px 10px 1px;
+    -webkit-animation: loading 1.5s ease-in-out infinite;
+    animation: loading 1.5s ease-in-out infinite;
+}
+#loading .shaft1 {
+    -webkit-animation-delay: 0.05s;
+}
+#loading .shaft2 {
+    -webkit-animation-delay: 0.1s;
+}
+#loading .shaft3 {
+    -webkit-animation-delay: 0.15s;
+}
+#loading .shaft4 {
+    -webkit-animation-delay: 0.2s;
+}
+#loading .shaft5 {
+    -webkit-animation-delay: 0.25s;
+}
+#loading .shaft6 {
+    -webkit-animation-delay: 0.3s;
+}
+#loading .shaft7 {
+    -webkit-animation-delay: 0.35s;
+}
+#loading .shaft8 {
+    -webkit-animation-delay: 0.4s;
+}
+#loading .shaft9 {
+    -webkit-animation-delay: 0.45s;
+}
+#loading .shaft10 {
+    -webkit-animation-delay: 0.5s;
+}
