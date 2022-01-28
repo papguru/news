@@ -264,6 +264,11 @@ li {
             <label>Music</label>
             <input id="music" type="text" placeholder="hihi" />
             </div>
+            <div class="generator__questions">
+                <label>Lyrics</label>
+                
+                <textarea id="lyrics" class="form-control" style="width: 371px; height: 318px;" white-space:="" pre-wrap;="" required=""></textarea>
+                </div>
 
 <div class="generator__questions" style="text-align: center;"><br />
 </div>
@@ -300,6 +305,7 @@ generate.addEventListener('click', () => {
     const singer = document.querySelector('#singer').value;
     const writer = document.querySelector('#writer').value;
     const music = document.querySelector('#music').value;
+    const lyrics = document.querySelector('#lyrics').value;
 	const markupContainer = document.querySelector('.generator__markup-generated');
 	
 	const markup = `
@@ -333,7 +339,7 @@ If you want the lyrics of the ${name} song you are in the right place here you g
 </tbody>
 </table>
 <h2>${name} Lyrics</h2>
-
+${lyrics}
 <h2>${name} Music Video</h2>
 ${url}
 <h2>Conclusion</h2>
