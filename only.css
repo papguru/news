@@ -719,3 +719,8 @@ input[type=textarea] {
    border: 2px solid #000;
 }
 
+.tumb img {
+    margin: -5px;
+    border-radius: 12px;
+    width: 70%;
+}
