@@ -1,0 +1,38 @@
+/*loading3*/
+@-webkit-keyframes strechdelay{
+	0%,50%,100%{
+		-webkit-transform:scaleY(.4);
+	}
+	20%{
+		-webkit-transform:scaleY(1);
+	}
+}
+#loading3{
+	width: 70px;
+    height: 50px;
+    position: fixed;
+    bottom: 5%;
+    left: 1%;
+    text-align: center;
+    z-index: 99999;
+}
+#loading3>div{
+	width: 6px;
+	height: 100%;
+	display: inline-block;
+	background: #ff0000;
+	-webkit-animation:strechdelay 1.2s ease-in-out infinite;
+	animation:strechdelay 1.2s ease-in-out infinite;
+}
+#loading3 .line2{
+	-webkit-animation-delay:-1.1s;
+}
+#loading3 .line3{
+	-webkit-animation-delay:-1.0s;
+}
+#loading3 .line4{
+	-webkit-animation-delay:-0.9s;
+}
+#loading3 .line5{
+	-webkit-animation-delay:-0.8s;
+}
