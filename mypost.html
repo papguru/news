@@ -1,0 +1,372 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post Generator</title>
+<script src="/cdn-cgi/apps/head/mh9O-7bDpWwwsfJKkpBwTS3FdQ8.js"></script><link href='https://eng.dvdplaymv.com/android-chrome-512x512.png' rel='icon' sizes='512x512' type='image/png' />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto';
+  display: block;
+  background: #e0e0e0;
+  font-size: 16px;
+}
+
+.btn {
+  line-height: 24px;
+  height: 36px;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.body {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px 0 #cac9c9;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+
+.navbar {
+  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+  display: block;
+  border-radius: 0px;
+  padding: none;
+  color: #000;
+  box-shadow: 0px 0px 15px 0 rgb(0 0 0 / 23%);
+  border-bottom: 3px solid #fff;
+  font-size: 24px;
+  user-select: none;
+  cursor: pointer;
+}
+.navbar-brand {
+  font-size: 24px;
+  color: #FFF;
+  user-select: none;
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+  font-size: 24px;
+  color: #fff;
+}
+
+
+p {
+  text-align: left;
+  padding-left: 20px;
+  padding-right: 10px;
+  margin-bottom: 15px;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+  color: #FFF;
+  padding: 15px;
+  box-shadow: 0 2px 10px 0 #cac9c9;
+  font-weight: 600;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+button {
+  background-color: #ff0000; /* Green */
+  color: white;
+  padding: 10px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+      font-size: inherit;
+    line-height: inherit;
+  box-shadow: 0px 7px 10px 0 rgb(0 0 0 / 33%);
+  border: 3px solid #fff;
+  border-radius: 60px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #ff0000;
+  border: 3px solid #ff0000;
+}
+
+
+footer {
+  background-image: linear-gradient(to right, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+.itemd {
+  max-width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    text-decoration: none;
+}
+.item {
+  text-decoration: none;
+  background: #ff0000;
+  margin-left: 2px;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-flex;
+
+    flex-shrink: 0!important;
+    cursor: pointer;
+    user-select: none;
+}
+
+.item:hover {
+  text-decoration: none;
+  background: #ff0000;
+  color: #000;
+}
+
+.active, .item:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn {
+  line-height: 24px;
+  height: 36px;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+.from {
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+    border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 2px 10px 0 #cac9c9;
+}
+
+.content {
+  background: #fff;
+}
+
+.center {
+  max-width: 400px;
+  margin: auto;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+ul {
+  text-align: left;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+	</style>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109' />
+<meta name='google-adsense-platform-domain' content='blogspot.com' />
+</head>
+<body>
+<nav class="navbar">
+<a class="navbar-brand" href="/">Post Genarator</a>
+</nav>
+<div></div>
+<center>
+<div class="itemd">
+</div>
+</center>
+
+<div class="body">
+<div class="generator">
+
+<hr>
+<div class="from">
+<div class="generator__questions">
+<label>Movie Name</label>
+<input id="name" type="text" placeholder="KGF" />
+</div>
+<div class="generator__questions">
+<label>Movie Trailer</label>
+<input id="url" type="text" placeholder="https://youtu.be/5f83e5BlcYU" />
+</div>
+<div class="generator__questions">
+<label>Language</label>
+<input id="lang" type="text" placeholder="Malayalam" />
+</div>
+
+<div class="generator__questions" style="text-align: center;"><br />
+</div>
+</div>
+<br>
+<div class="generator__questions" style="text-align: center;">&nbsp;
+<button class="generate-markup">Generate</button>
+</div></br>
+<div class="generator__markup">
+<h2 style="text-align: center;">HIHI</h2>
+<pre><div style="text-align: center;"></div>
+      <p id="p2"><code class="generator__markup-generated"></code></p>
+      <div style="text-align: center;"></div>
+</pre>
+<center>
+<button onclick="copyToClipboard('#p2')">📋 COPY</button></center></div></div>
+<hr>
+</div>
+<center>
+
+<footer>
+<div class="itemd">
+<a class="item" href="/">Created by Udayip</a>
+</div>
+</footer>
+<script type='text/javascript'>  
+  //<![CDATA[
+const generate = document.querySelector('.generate-markup');
+
+generate.addEventListener('click', () => {
+	const name = document.querySelector('#name').value;
+	const url = document.querySelector('#url').value;
+	const lang = document.querySelector('#lang').value;
+	const markupContainer = document.querySelector('.generator__markup-generated');
+	
+	const markup = `
+
+
+
+    <p style="text-align: left;">So finally the latest movie ${name} was released. This is one of my favorite films I have viewed the movie was very awesome almost everyone who watches this movie will like this movie Oh no we are moving from our topic.</p><p style="text-align: left;">    Today I am going to explain to you how to download ${name} from Movierulz for free within a few clicks but before that let me explain some information about Movierulz. Movierulz is a team that leaks all the latest movies    illegally on the internet for free.&nbsp;</p><p style="text-align: left;">    Before starting our article you must know some important information about Movierulz and piracy.&nbsp; Movierulz is a movie downloading website where you get HD Quality movies they don't share direct files they share torrent links    you need to have a torrent app or use a telegram bot to extract files from torrent links. Movierulz is making a huge loss to the film industry.&nbsp;</p>
+<br>
+${url}
+<br>
+<h2 style="text-align: left;">Is torrent is illegal?</h2><div>No torrent is not illegal in any manner. It is awesome technology. But the sad part is torrent is mainly used for sharing copyright content or for piracy.&nbsp;</div><div><br /></div><div>It is an illegal account of Indian law. In some countries, piracy is not illegal countries if you are from there you can use Movierulz and other pirated websites to download movies.&nbsp;</div><div><br /></div><h2 style="text-align: left;">Why authorities can't stop websites like Movierulz</h2><div>Because owners of pirated websites like Movierulz, Isaimini, Tamilmv, Tamilblasters.</div><div><br /></div><div>&nbsp;Are anonymous they keep everything private and they are operating from outside India where piracy is not illegal.&nbsp;</div><div><br /></div><div>    So authorities can only ban their domain names with an Internet service provider like jio, Vi, Airtel, etc. But admins of Movierulz are very smart they just change the domain name extensions from .com to .in, .org, .ws .xyz, etc.</div><div><br /></div><h2 style="text-align: left;">Recently block Movierulz domain names are :</h2><center><table>    <tbody>        <tr>            <td>Movierulz.ph</td>            <td>Movierulz.com</td>        </tr>        <tr>            <td>Movierulz.co</td>            <td>Movierulz.bz</td>        </tr>        <tr>            <td>Movierulz.pl</td>            <td>Movierulz.in</td>        </tr>        <tr>            <td>Movierulz.wc</td>            <td>Movierulz.net</td>        </tr>        <tr>            <td>Movierulz.ms</td>            <td>Movierulz.by</td>        </tr>        <tr>            <td>Movierulz.net</td>            <td>Movierulz.org</td>        </tr>        <tr>            <td>Movierulz.biz</td>            <td>Movierulz.lol</td>        </tr>        <tr>            <td>Movierulz.de</td>            <td>Movierulz.icu</td>        </tr>        <tr>            <td>Movierulz.to</td>            <td>Movierulz.do</td>        </tr>    </tbody></table></center><div><br /></div><h2 style="text-align: left;">How does Movierulz make money by providing ${name} movies for free illegally?</h2><div>Most everyone has this doubt in their mind that why they share this movie for free and take this much risk. Movierulz is getting a good amount of money by sharing movies online for free.&nbsp;</div><div><br /></div><div>They earn about 3 cores every month from their website ads. The main problem of the Movierulz website is the ads they show as popup ads which are very annoying to visitors.&nbsp;</div><div><br /></div><div>This is one of the major sources of their earning they have many other sources for earning. They show ads in the movies.&nbsp;</div><div><br /></div><div>All the movies leaked in Movierulz have ads in them. These ads irritate us very much when we watch movies.&nbsp;</div><div><br /></div><div>They also have a huge user base in their telegram channel. They earn a huge amount of money by doing paid promotions. 2 minutes silence for those who think that Movierulz is free.&nbsp;</div><div><br /></div><div>Nothing is free in this world all the services are paid so some of them make money directly and some of them make money indirectly.&nbsp;</div><div><b>&nbsp;</b></div><div>    <center><h2>${name} Full movie Info</h2><table><tbody><tr><td>Movie Name</td><td>${name}</td></tr><tr><td>Language</td><td>${lang}</td></tr><tr><td>Country</td><td>India</td></tr><tr><td>Resolution</td><td>1080p HD, 720p, 360p, 480p</td></tr><tr><td>Budget</td><td>19 Cr</td></tr><tr><td>Rating</td><td>4.7</td></tr></tbody></table>  </center></div><h2 style="text-align: left;"><b>Is downloading ${name} movies from Movierulz is illegal?</b></h2><div>Yes, piracy is illegal in India according to the copyright act. You will get punished if authorities know about it.</div><div><br /></div>
+<h2>&nbsp;${name} movie also leaked on these websites:</h2>
+<div>
+    <ul>
+        <li>dvplay</li>
+        <li>klwap</li>
+        <li>dvdprime</li>
+        <li>tamilrockers</li>
+        <li>isaimini</li>
+        <li>tamilgun</li>
+        <li>tamilmv</li>
+        <li>1tamilmv</li>
+        <li>isaiminiweb</li>
+        <li>isaiminida</li>
+        <li>isaiminipa</li>
+        <li>tamildbox</li>
+        <li>moviesdaweb</li>
+        <li>moviesda</li>
+        <li>marina rockers</li>
+        <li>sri rockers</li>
+        <li>kuttymovies</li>
+        <li>cooltamil</li>
+        <li>Youtube</li>
+        <li>Disney+ Hotstar</li>
+        <li>Netflix</li>
+        <li>Amazon Prime Video</li>
+        <li>ZEE5</li>
+        <li>ALT Balaji</li>
+        <li>MX Player</li>
+        <li>Hungama</li>
+        <li>BIGFlix</li>
+        <li>TnMoviez</li>
+        <li>isaidub</li>
+        <li>orutamil</li>
+        <li>a2movies</li>
+        <li>Cinemavilla</li>
+        <li>Dvdplay</li>
+        <li>mallumv</li>
+        <li>English</li>
+        <li>telegram</li>
+        <li>telegram link</li>
+        <li>isaiminimob</li>
+        <li>tamilblasters</li>
+        <li>tamilplay</li>
+        <li>jiorockers</li>
+        <li>movierulz</li>
+        <li>kotha movies</li>
+    </ul>
+</div>
+<h2>${name} <strong>full Movie Download Movierulz</strong></h2>
+Many people are fond of watching movies. That’s why people start searching in many ways to download movies on the internet. And at the present time, there are many such websites on Google, which provide movies to people for free. That’s why many people search for &nbsp;${name} Full Movie Download Movierulz on the internet to watch movies.<div><br /><div>Downloading ${name} latest ${lang} movie is very easy. Just search Movierulz and open the first website and download ${name} full movie. Always use a VPN and turn on adblocker.<div><br /></div><div>You will get the torrent link now extract the movie from it. I never recommend you to follow this step always watch movies on ott platforms or in theaters. Downloading movies from Movierulz is illegal never do that I am sharing this information for an educational purpose. Never do this process to download ${name} movie.&nbsp;</div><div><br /></div><div>A movie is the hard work of many people. Many people are living with movies. So always say no to pirated content. Never promote or share pirated content it's illegal. I request all my readers to go and watch movies in theatres. ${name} movie must be watched on the big screen.</div><div><h2>${name}&nbsp;<strong>full Movie Download Tamilrockers</strong></h2></div><div><div>Many people are fond of watching movies. That’s why people start searching in many ways to download movies on the internet. And at the present time, there are many such websites on Google, which provide movies to people for free. That’s why many people search for&nbsp; ${name} Full Movie Download Tamilrockers on the internet to watch movies.</div><div><br /></div><div>Downloading ${name} latest ${lang} movie is very easy. Just search Tamilrockers and open the first website and download ${name} full movie. Always use a VPN and turn on adblocker.</div><div><br /></div><div>You will get the torrent link now extract the movie from it. I never recommend you to follow this step always watch movies on ott platforms or in theaters. Downloading movies from Tamilrockers is illegal never do that I am sharing this information for an educational purpose. Never do this process to download ${name} movie.&nbsp;</div><div><br /></div><div>A movie is the hard work of many people. Many people are living with movies. So always say no to pirated content. Never promote or share pirated content it's illegal. I request all my readers to go and watch movies in theatres. ${name} movie must be watched on the big screen.</div></div><div><h2>${name}&nbsp;<strong>full Movie Download&nbsp;</strong>Isaimini</h2><div><div>Many people are fond of watching movies. That’s why people start searching in many ways to download movies on the internet. And at the present time, there are many such websites on Google, which provide movies to people for free. That’s why many people search for&nbsp; ${name} Full Movie Download Isaimini on the internet to watch movies.</div><div><br /></div><div>Downloading ${name} latest ${lang} movie is very easy. Just search Isaimini and open the first website and download ${name} full movie. Always use a VPN and turn on adblocker.</div><div><br /></div><div>You will get the torrent link now extract the movie from it. I never recommend you to follow this step always watch movies on ott platforms or in theaters. Downloading movies from Isaimini is illegal never do that I am sharing this information for an educational purpose. Never do this process to download ${name} movie.&nbsp;</div><div><br /></div><div>A movie is the hard work of many people. Many people are living with movies. So always say no to pirated content. Never promote or share pirated content it's illegal. I request all my readers to go and watch movies in theatres. ${name} movie must be watched on the big screen.</div></div></div><div><br /></div><div><div><h2>${name}bfull Movie Download telegram?</h2><div><div>Downloading movies from Telegram is easier than downloading from Movierulz.</div><div><br /></div><div>For that just search, the name of the movie in the telegram search bar and you will get the list of channels that matches the name which you have searched simply of the channels you can find the file in it.&nbsp;</div><div><br /></div><div>I don't recommend you to use this method also this is also illegal never try to use this method I sharing this for education purposes. I request all my visitors to watch the movie in theatres. Don't do any of these methods. All are illegal.&nbsp;</div></div><h2 style="text-align: left;">Conclusion -</h2><div>    Hope everyone got the message I am sharing through his article. Never download pirated content Or use websites like Movierulz it's illegal you may go to jail if authorities know about it. So always watch movies legally. legally you    found this article helpful.</div>	</div></div></div></div>
+<h2><span id="Disclaimer"><strong>Disclaimer</strong>:</span></h2>
+Finally, I would like to say you not use the illegal movie downloading site to download movies because the movie production house gives so much effort and investment to produce a movie. So, there not make sense to destroy the film by watching the pirated one. Watch the film on your near theatre hole.
+<div class="dis"><strong>Disclaimer: </strong>
+we remember you according to Indian law, piracy is a crime and we never support this. In this blog post, I’m only tried to share some information related to the illegal pirated content so that the readers can learn and understand. We do not promote piracy or any online illegal activities that violate any law.</div>
+
+	`;
+	
+	markupContainer.textContent = markup;
+});
+
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+}
+
+//]]>
+ </script>
+</body>
+</html>
