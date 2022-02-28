@@ -1,0 +1,262 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-infinitescroll/3.0.6/infinite-scroll.pkgd.min.js"></script>
+        <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport'/>
+        <meta charset="UTF-8">
+        <style>
+       body {
+    margin: 0;
+    padding: 0;
+   
+    font-weight: 400;
+    background: #f5f8fc;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+*, body, html {
+    box-sizing: border-box;
+}
+.container {
+max-width: 900px;
+margin: 0 auto
+}
+header {
+    color: #fff;
+    text-align: center;
+
+background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 9999;
+   
+    width: 100%;
+}
+.site-title a {
+    padding: 13px;
+    display: block;
+
+    font-size: 25px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+a {
+	
+	color:#5851db;
+
+    text-decoration: none;
+}
+
+
+.prathyoush-list{
+
+    display: block;
+
+    text-align: center;
+}
+.prathyoush-face {
+    font-size: 23px;
+    padding: 8px 13px;
+    background-color: #fff;
+    color: #8955fc;
+    margin: 16px;
+    box-shadow: 0 2px 2px 0 #e8e8e8;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 12px;
+    position: relative;
+    vertical-align: baseline;
+      
+    border: 3px solid #eee;
+}
+.prathyoush-face:hover{
+    border: 3px solid #8955fc;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.site-title a {
+        font-size: 18px;
+        
+    }
+
+
+    
+.container {
+padding: 5px;
+}
+}
+
+#prathyoush-alert {
+    background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    position: fixed;
+    right: 1px;
+    top: 42%;
+    display: none;
+
+}
+footer{
+
+
+background: #000;
+
+padding: 5px;
+bottom: 0px;
+color: #fff;
+text-align: center;
+}
+.prathyoush-list h2{
+
+    color: #8955fc;
+}
+     </style>
+    </head>
+    <body>
+   
+        <header>
+            <div class="site-branding-text">
+            <p class="site-title"><a href="/" rel="home">Happyface.net</a></p>
+            </div>
+            </header>
+      <main>
+            <div class="container">
+                
+                
+
+            
+                <div class="prathyoush-list">
+                    <h2>Emoji feliz 😊</h2>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🙂</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😀</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😬</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😁</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😂</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😃</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😄</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🤣</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😗</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😅</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😘</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😙</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😆</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😇</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😉</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😊</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🙃</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">&#9786;</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😋</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😌</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😍</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😚</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🤪</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😜</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🤠</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😝</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😛</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🤑</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😎</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🤓</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🧐</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🤗</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😻</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😽</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🤡</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😺</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🙈</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🙉</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">🙊</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😈</div></div>
+                <div class="prathyoush-face"><div class="prathyoush-copy">😹</div></div>
+              
+            </div>
+            
+
+           
+            
+        </div>
+
+    </main>
+
+<footer>
+    
+ gggg
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+<script>
+$(document).ready(function(){
+    $(".prathyoush-face").click(function(event){
+    var $tempElement = $("<input>");
+        $("body").append($tempElement);
+        $tempElement.val($(this).closest(".prathyoush-face").find(".prathyoush-copy").text()).select();
+        document.execCommand("Copy");
+        $tempElement.remove();
+       
+    });
+    $(".prathyoush-face").click(function () {
+        $("#prathyoush-alert").show().delay(100).fadeOut();        
+      
+            });
+
+
+});
+
+</script>
+<span id="prathyoush-alert">&#10004; Copiada!</span>
+<script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".prathyoush-face").click(function(event){
+    var $tempElement = $("<input>");
+        $("body").append($tempElement);
+        $tempElement.val($(this).closest(".prathyoush-face").find(".prathyoush-copy").text()).select();
+        document.execCommand("Copy");
+        $tempElement.remove();
+       
+    });
+    $(".prathyoush-face").click(function () {
+        $("#prathyoush-alert").show().delay(100).fadeOut();        
+      
+            });
+            var nextURL;
+function updateNextURL( doc ) {
+  nextURL = $( doc ).find('.aryapage-next').attr('href');
+  
+}
+updateNextURL( document );
+var $container = $('.prathyoush-list').infiniteScroll({
+  path: function() {
+    return nextURL;
+  },
+ 
+  append: '.content',
+  history: 'push',
+  historyTitle: true,
+  status: '.page-load-status',
+  checkLastPage: '.aryapage-next'
+ 
+});
+$container.on( 'load.infiniteScroll', function( event, response, path ) {
+  updateNextURL( response );
+});
+
+});
+
+</script>
+
+</body>
+</html>
