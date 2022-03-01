@@ -262,14 +262,7 @@ text-align: center;
             <p class="aryapage">
                 <a class="aryapage-next" href="page2.html">Next page</a>
             </p>
-    </main>
-
-<footer>
-    
- gggg
-    </footer>
-  
-<script>
+	    <script>
 $(document).ready(function(){
     $(".prathyoush-face").click(function(event){
     var $tempElement = $("<input>");
@@ -295,7 +288,7 @@ var $container = $('.container').infiniteScroll({
     return nextURL;
   },
  
-  append: '.container',
+  append: 'main',
   history: 'push',
   historyTitle: true,
   status: '.page-load-status',
@@ -310,6 +303,14 @@ $container.on( 'load.infiniteScroll', function( event, response, path ) {
 
 </script>
 <span id="prathyoush-alert">&#10004; Copiada!</span>
+    </main>
+
+<footer>
+    
+ gggg
+    </footer>
+  
+
 
 </body>
 </html>
