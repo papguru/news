@@ -243,21 +243,27 @@ text-align: center;
             
         </div>
      
-            <div class="page-load-status">
-                <div class="aload infinite-scroll-request">
+         
+		    <div class="scroller-status">
+  <div class="infinite-scroll-request loader-ellips">
+    ...
+	    <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span></span>
-                </div>
+  </div>
+  <p class="infinite-scroll-last">End of content</p>
+  <p class="infinite-scroll-error">No more pages to load</p>
+</div>
                 <p class="infinite-scroll-last">ღƪ(ˆ◡ˆ)ʃ♡ That's all fancy text we have ♡ƪ(ˆ◡ˆ)ʃ♪</p>
                 <p class="infinite-scroll-error">Error Contact<a
                         href="mailto:?subject=Fancy%20Text%20Not%20Working;body=Site%20Not%20Working"
                         target="_self" rel="noopener">hackersaitand@gmail.com</a></p>
             </div>
-            <p class="aryapage">
-                <a class="aryapage-next" href="page2.html">Next page</a>
-            </p>
+        <!-- pagination has path -->
+<p class="pagination">
+  <a class="pagination__next" href="page2.html">Next page</a>
+</p>
     
     
             </div>
@@ -282,28 +288,14 @@ $(document).ready(function(){
         $("#prathyoush-alert").show().delay(100).fadeOut();        
       
             });
-var nextURL;
-function updateNextURL( doc ) {
-  nextURL = $( doc ).find('.aryapage-next').attr('href');
-  
-}
-updateNextURL( document );
-var $container = $('main').infiniteScroll({
-  path: function() {
-    return nextURL;
-  },
- 
-  append: false,
-  history: 'push',
-  historyTitle: true,
-  status: '.page-load-status',
-  checkLastPage: '.aryapage-next'
- 
+	
+$('.prathyoush-list').infiniteScroll({
+  path: '.pagination__next',
+  append: '.prathyoush-face',
+  status: '.scroller-status',
+  hideNav: '.pagination',
 });
-$container.on( 'load.infiniteScroll', function( event, response, path ) {
-  updateNextURL( response );
-});           
-
+	
 });
 
 </script>
